@@ -77,9 +77,9 @@
   console.log("%cHosting%cSelf-hosted Linux Server NGINX", title, e);
   console.log("%cEmail%cSendGrid (API)", title, e);
 
-  // function handleMessage(event) {
-  //   color = event.detail.color;
-  // }
+  function handleMessage(event: any) {
+    color = event.detail.color;
+  }
 </script>
 
 <Button />
@@ -88,7 +88,7 @@
 {sevenHundred}
 
 <div class="page" id="page">
-  <!-- <Navigation on:colorChange={handleMessage} /> -->
+  <Navigation on:colorChange={handleMessage} />
   <header class="introduction">
     <Header />
   </header>
