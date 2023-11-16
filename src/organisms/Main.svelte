@@ -6,9 +6,9 @@
   import Projects from "../molecules/Projects.svelte";
   import References from "../molecules/References.svelte";
 
-  // export let form;
+  export let form: any;
   export let color: string;
-  // export let placeholder;
+  export let placeholder: any;
   export let sevenHundred: any;
   let innerHeight: number;
 
@@ -49,10 +49,10 @@
   <section class="section-slice projects" class:is-sticky={sevenHundred}>
     <Projects />
   </section>
-  <!-- <div id="contact"></div>
-    <section class="section-slice is-sticky contact">
-        <Contact {form} {placeholder} {color}/>
-    </section> -->
+  <div id="contact" />
+  <section class="section-slice is-sticky contact">
+    <Contact {form} {placeholder} {color} />
+  </section>
 </article>
 
 <style>

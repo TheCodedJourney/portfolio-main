@@ -5,15 +5,14 @@
 
   export let form: any;
   export let placeholder: any;
-  //   export let color: string;
+  export let color: string;
   let checkboxValue = true;
   let showModal = false;
 
   let submitAgain = false;
 </script>
 
-<!-- {color} -->
-<Button on:click={() => (showModal = true)}>👋 Say hello</Button>
+<Button on:click={() => (showModal = true)} {color}>👋 Say hello</Button>
 
 <Modal bind:showModal>
   <div slot="header">
@@ -43,8 +42,9 @@
             <p style="font-size: 5rem; margin-top: 2rem; margin-bottom: 1rem;">
               👨🏻‍💻
             </p>
-            <!-- {color} -->
-            <Button on:click={() => (submitAgain = true)}>Back to form</Button>
+            <Button on:click={() => (submitAgain = true)} {color}
+              >Back to form</Button
+            >
           </div>
         </div>
       </div>
@@ -168,8 +168,7 @@
 
         <div class="button-position">
           <button type="submit" class="submit">
-            <!-- {color} -->
-            <Button>Send Message</Button>
+            <Button {color}>Send Message</Button>
           </button>
         </div>
       </div>
