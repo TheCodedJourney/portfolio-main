@@ -1,6 +1,6 @@
 <script lang="ts">
   import Button from "$lib/Button.svelte";
-  export let color: string = "orange";
+  export let color: string = "#fd8e8e";
 </script>
 
 <div class="header" style="--color: {color};">

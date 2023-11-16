@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let color: string = "orange";
+  export let color: string = "#fd8e8e";
 </script>
 
 <button class="button" on:click style="--color: {color};">
