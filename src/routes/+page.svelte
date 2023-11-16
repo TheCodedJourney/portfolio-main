@@ -93,7 +93,7 @@
     <Header />
   </header>
   <main class="main-page">
-    <!-- <Main /> -->
+    <Main {sevenHundred} {color} />
   </main>
 </div>
 
