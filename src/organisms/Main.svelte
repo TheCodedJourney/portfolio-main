@@ -17,13 +17,17 @@
 
 <svelte:window bind:innerHeight />
 <article>
-  <!-- <section class="section-slice is-sticky headshot" style="--color: {color};">
-        <Headshot/>
-    </section>
-    <div id="about"></div>
-    <section class="section-slice about" class:is-sticky={sevenHundred} class:static={!sevenHundred}>
-        <About />            
-    </section> -->
+  <section class="section-slice is-sticky headshot" style="--color: {color};">
+    <Headshot />
+  </section>
+  <div id="about" />
+  <section
+    class="section-slice about"
+    class:is-sticky={sevenHundred}
+    class:static={!sevenHundred}
+  >
+    <About />
+  </section>
   <div id="experience" />
   <section
     class="section-slice is-sticky experience"
@@ -32,15 +36,20 @@
   >
     <Experience {sevenHundred} />
   </section>
-  <!-- <div id="references"></div>
-    <section class="section-slice is-sticky references" style="--color: {color};" class:is-sticky={sevenHundred} class:static={!sevenHundred}>
-        <References />
-    </section>
-    <div id="projects"></div>
-    <section class="section-slice projects" class:is-sticky={sevenHundred}>
-        <Projects />
-    </section>
-    <div id="contact"></div>
+  <div id="references" />
+  <section
+    class="section-slice is-sticky references"
+    style="--color: {color};"
+    class:is-sticky={sevenHundred}
+    class:static={!sevenHundred}
+  >
+    <References />
+  </section>
+  <div id="projects" />
+  <section class="section-slice projects" class:is-sticky={sevenHundred}>
+    <Projects />
+  </section>
+  <!-- <div id="contact"></div>
     <section class="section-slice is-sticky contact">
         <Contact {form} {placeholder} {color}/>
     </section> -->

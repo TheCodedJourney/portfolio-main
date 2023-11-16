@@ -1,11 +1,15 @@
-<!-- <script>
-    import TomLondon from "../assets/LinkedinPhoto.jpg"
+<script>
+  import TomLondon from "../lib/images/LinkedinPhoto.jpg";
 </script>
 
-    <img class="image-control" src={TomLondon} alt="Tom on the rooftop at Bishopsgate WeWork London">
+<img
+  class="image-control"
+  src={TomLondon}
+  alt="Tom on the rooftop at Bishopsgate WeWork London"
+/>
 
 <style>
-.image-control {
+  .image-control {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,5 +17,5 @@
     mix-blend-mode: multiply;
     -o-object-fit: cover;
     object-fit: cover;
-}
-</style> -->
+  }
+</style>
