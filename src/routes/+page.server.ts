@@ -5,13 +5,19 @@ export const config = {
 
 import type { Actions } from "@sveltejs/kit";
 import { fail } from "@sveltejs/kit";
-
 import z from "zod";
 import sgMail from "@sendgrid/mail/index";
-
 import { env } from "$env/dynamic/private";
-const { SENDGRID_API_KEY, EMAIL_DESTINATION, EMAIL_REPLY_TO, TEMPLATE_ID } =
-  env;
+
+const {
+  SENDGRID_API_KEY,
+  EMAIL_DESTINATION,
+  EMAIL_REPLY_TO,
+  TEMPLATE_ID,
+  TEST,
+} = env;
+
+console.log("TEST ENV FILE:", TEST);
 
 const contactFormSchema = z.object({
   name: z.string().min(1, { message: "Please provide your full name" }),
