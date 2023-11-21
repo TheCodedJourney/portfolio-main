@@ -1,11 +1,10 @@
 <script lang="ts">
   import Button from "$lib/Button.svelte";
-  let color: string = "#fd8e8e";
-
   import Header from "../organisms/Header.svelte";
   import Main from "../organisms/Main.svelte";
   import Navigation from "../organisms/Navigation.svelte";
 
+  export let color: string = "#fd8e8e";
   export let form: {
     data: {
       token: string;
