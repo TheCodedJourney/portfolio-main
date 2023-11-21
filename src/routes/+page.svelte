@@ -1,6 +1,4 @@
 <script lang="ts">
-  import ContactForm from "../atoms/ContactForm.svelte";
-  import Modal from "../atoms/Modal.svelte";
   import Button from "$lib/Button.svelte";
   let color: string = "#fd8e8e";
 
