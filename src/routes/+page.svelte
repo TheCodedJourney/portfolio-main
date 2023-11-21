@@ -73,6 +73,9 @@
   console.log("%cContent Management%cPrismic (Rest API)", title, e);
   console.log("%cHosting%cSelf-hosted Linux Server NGINX", title, e);
   console.log("%cEmail%cSendGrid (API)", title, e);
+  console.log(
+    "Thank you to everyone for your feedback on this project so far :)"
+  );
 
   function handleMessage(event: any) {
     color = event.detail.color;
